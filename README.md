@@ -10,7 +10,7 @@ The app uses your browser's geolocation API to track your position and displays 
 
 1. Install dependencies:
    ```bash
-   npm install
+   bun install
    ```
 
 2. Add your map image as `public/map.png`
@@ -19,13 +19,13 @@ The app uses your browser's geolocation API to track your position and displays 
 
 4. Run the dev server:
    ```bash
-   npm run dev
+   bun dev
    ```
 
 ## Testing on mobile
 
 Geolocation requires HTTPS. For local testing on your phone, either:
-- Use `npm run dev -- --experimental-https`
+- Use `bun dev --experimental-https`
 - Use ngrok: `npx ngrok http 3000`
 
 ## Configuration
