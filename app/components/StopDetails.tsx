@@ -59,7 +59,7 @@ export default function StopDetails({
           {/* Header */}
           <div className="flex items-start justify-between p-6 border-b border-gray-200 shrink-0">
             <div className="flex-1">
-              <div className="text-sm text-blue-600 font-semibold mb-1">
+              <div className="text-sm text-[#c72125] font-semibold mb-1">
                 {stop.shortTitle}
               </div>
               <h2 className="text-2xl font-bold text-gray-900">
@@ -68,7 +68,7 @@ export default function StopDetails({
             </div>
             <button
               onClick={onClose}
-              className="ml-4 p-2 hover:bg-gray-100 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 shrink-0"
+              className="ml-4 p-2 hover:bg-gray-100 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-[#c72125] shrink-0"
               aria-label="Close"
             >
               <svg
@@ -119,7 +119,7 @@ export default function StopDetails({
             {!isVisited && (
               <button
                 onClick={onMarkVisited}
-                className="flex-1 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-green-400 flex items-center justify-center gap-2"
+                className="flex-1 bg-[#c72125] hover:bg-[#a01b1e] text-white px-6 py-3 rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-[#c72125] flex items-center justify-center gap-2"
               >
                 <svg
                   className="w-5 h-5"
@@ -139,7 +139,7 @@ export default function StopDetails({
             )}
 
             {isVisited && (
-              <div className="flex-1 bg-green-100 text-green-700 px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2">
+              <div className="flex-1 bg-[#a01b1e] text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2">
                 <svg
                   className="w-5 h-5"
                   fill="none"
@@ -160,7 +160,7 @@ export default function StopDetails({
             {onNext && (
               <button
                 onClick={onNext}
-                className="flex-1 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 flex items-center justify-center gap-2"
+                className="flex-1 bg-[#c72125] hover:bg-[#a01b1e] text-white px-6 py-3 rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-[#c72125] flex items-center justify-center gap-2"
               >
                 Next Stop
                 <svg

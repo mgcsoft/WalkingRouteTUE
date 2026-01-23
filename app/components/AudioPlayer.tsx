@@ -134,7 +134,7 @@ export default function AudioPlayer({
       <div className="flex items-center gap-4">
         <button
           onClick={togglePlay}
-          className="w-12 h-12 flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-12 h-12 flex items-center justify-center bg-[#c72125] hover:bg-[#a01b1e] text-white rounded-full shadow-lg transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#c72125]"
           aria-label={isPlaying ? "Pause" : "Play"}
         >
           {isPlaying ? (
@@ -164,9 +164,9 @@ export default function AudioPlayer({
             max={duration}
             value={currentTime}
             onChange={handleSeek}
-            className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-blue-500"
+            className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#c72125]"
             style={{
-              background: `linear-gradient(to right, #3B82F6 0%, #3B82F6 ${
+              background: `linear-gradient(to right, #c72125 0%, #c72125 ${
                 (currentTime / duration) * 100
               }%, #D1D5DB ${(currentTime / duration) * 100}%, #D1D5DB 100%)`,
             }}
@@ -190,7 +190,7 @@ export default function AudioPlayer({
           step="0.1"
           value={volume}
           onChange={handleVolumeChange}
-          className="flex-1 h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-blue-500"
+          className="flex-1 h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-[#c72125]"
         />
       </div>
     </div>
