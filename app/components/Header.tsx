@@ -28,14 +28,20 @@ export default function Header() {
         {/* Home button */}
         <Link
           href="/"
-          className="flex items-center gap-2 px-4 py-2 rounded-lg text-white font-medium text-sm"
+          className="flex items-center text-white"
           style={{
             background: "linear-gradient(to right, rgb(0, 126, 132), rgb(0, 160, 160))",
+            borderRadius: 8,
+            padding: "0.5rem 1rem",
+            fontWeight: 500,
+            fontSize: "1rem",
+            height: "2.5rem",
+            gap: "0.5rem",
           }}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            style={{ fontSize: "1.25rem", width: "1.25rem", height: "1.25rem" }}
             viewBox="0 0 24 24"
             fill="currentColor"
           >
