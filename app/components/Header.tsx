@@ -14,8 +14,8 @@ export default function Header() {
     >
       {/* Inner wrapper for flex layout */}
       <div className="flex justify-between items-center w-full">
-        {/* Logo section - hidden on mobile */}
-        <div className="hidden md:block">
+        {/* Logo section - always visible like original */}
+        <div>
           <Link href="/">
             <img
               src="/GENIUS.png"
@@ -24,9 +24,6 @@ export default function Header() {
             />
           </Link>
         </div>
-
-        {/* Spacer for mobile - pushes button to right when logo is hidden */}
-        <div className="md:hidden" />
 
         {/* Home button */}
         <Link
