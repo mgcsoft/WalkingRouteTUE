@@ -202,23 +202,6 @@ export default function LocationMap() {
 
   return (
     <div className="flex flex-col items-center gap-4 p-4 min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="w-full max-w-6xl">
-        <h1 className="text-3xl font-bold text-center mb-2 text-gray-900">
-          TU/e Campus Audio Tour
-        </h1>
-        <p className="text-center text-sm">
-          <a
-            href="https://www.tue.nl/en/research/institutes/eindhoven-institute-for-renewable-energy-systems/projects/genius"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#c72125] cursor-pointer"
-          >
-            GENIUS Project - Duurzame Energiesystemen
-          </a>
-        </p>
-      </div>
-
       {/* Loading and Error States */}
       {loading && (
         <div className="flex items-center gap-2 text-gray-600">
